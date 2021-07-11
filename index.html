@@ -1,13 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment</title>
-    <script src="1st.js"></script>
+    <style>
+        div {
+            align-items: center;
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+
+        body {
+            background-color: aquamarine;
+        }
+    </style>
 </head>
+
 <body>
-    
+
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="fname" placeholder="Enter Name">
+        <button onclick="myFunction()">Say Hello</button>
+        <p id="display"> </p>
+    </div>
+    <p id="display"></p>
+
+    <script>
+        var n = document.getElementById("fname").value;
+        function myFunction() {
+            document.getElementById("display").innerHTML = "Hello " + n +" nice to meet you !!!";
+        }
+    </script>
+
 </body>
+
 </html>
